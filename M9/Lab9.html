@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>M9 lab</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.4.0/umd/react.development.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.0/umd/react-dom.development.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+</head>
+
+<body>
+	
+
+	
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#" onclick="enter_add()">Home</a>
+    </div>
+
+    <div>
+		<ul class="nav navbar-nav">
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					Language
+					<b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a>English</a></li>
+					<li class="divider"></li>
+					<li onclick="trans_to_chinese()"><a>简体中文</a></li>
+				</ul>
+			</li>
+		</ul>
+    </div>
+    </div>
+</nav>
+
+	
+<div id="row0">
+	<label id="r0_label">address</label>
+	<input id="add" type="text" class="form-control" id="name" placeholder="please enter your address">
+</div>
+
+<div id="row1"></div>
+
+
+<script>
+fucntion H_W(){
+	const element = <h1>Hello, world</h1>;
+	ReactDOM.render(element, document.getElementById('row0'));
+}
+
+fucntion enter_add(){
+	const element =<input type="text" class="form-control" id="name" placeholder="please enter your address">;
+	ReactDOM.render(element, document.getElementById('row0'));
+}
+
+fucntion sales_list(){
+	const element = <h4>Running sales: </h4>;
+	ReactDOM.render(element, document.getElementById('row0'));
+}
+
+function trans_to_chinese(){
+	const element_1 = <label id="r0_label">地址</label>;
+	const element_2 = <input id="add" type="text" class="form-control" id="name" placeholder="请输入地址">;
+	ReactDOM.render(element, document.getElementById('r0_label'));
+	ReactDOM.render(element, document.getElementById('add'));
+}
+</script>
+
+
+</body>
+</html>
