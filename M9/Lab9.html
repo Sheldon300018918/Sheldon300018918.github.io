@@ -42,7 +42,7 @@
 	
 <div id="row0">
 	<label id="r0_label">address</label>
-	<input id="add" type="text" class="form-control" id="name" placeholder="please enter your address">
+	<input id="add" type="text" class="form-control" id="address" placeholder="please enter your address">
 </div>
 
 <div id="row1"></div>
@@ -55,7 +55,7 @@ fucntion H_W(){
 }
 
 fucntion enter_add(){
-	const element =<input type="text" class="form-control" id="name" placeholder="please enter your address">;
+	const element =<input type="text" class="form-control" id="address" placeholder="please enter your address">;
 	ReactDOM.render(element, document.getElementById('row0'));
 }
 
@@ -66,7 +66,7 @@ fucntion sales_list(){
 
 function trans_to_chinese(){
 	const element_1 = <label id="r0_label">地址</label>;
-	const element_2 = <input id="add" type="text" class="form-control" id="name" placeholder="请输入地址">;
+	const element_2 = <input id="add" type="text" class="form-control" id="address" placeholder="请输入地址">;
 	ReactDOM.render(element, document.getElementById('r0_label'));
 	ReactDOM.render(element, document.getElementById('add'));
 }
